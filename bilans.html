@@ -1,0 +1,168 @@
+<!DOCTYPE HTML>
+<html>
+		<head>
+			<meta charset="utf-8"/>
+			<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>		
+			<title>Budżet domowy</title>
+			<meta name="keywords" content="budżet, pieniadze, budzet domowy, prowadzenie, finanse, wydatki, przychody, bilans"/>
+			<meta name="description" content="Strona poświęcona tematyce domowych finansów. Prowadzenie bilansu własnych przychodów oraz wydatków."/>
+
+			<link href="style.css" rel="stylesheet" type="text/css"/>
+			<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+			<script type="text/javascript" src="timer.js"></script>
+			<script type="text/javascript" src="pieChart.js"></script>
+			<link rel="stylesheet" href="css/fontello.css">
+
+		 </head>
+ <body onload="odliczanie()">
+	<div class="container">
+		<div class="bar">
+			<div class="timericon"><i class="icon-clock"></i></div>
+			<div id="timer" title="Aktualna data"></div>
+			<div class="dropdownMenu" title="Wybierz okres">
+				<ol>
+					<li><a href="#">Bieżący miesiąc</a></li>
+						<ul> 			
+							<li><a href="#">Poprzedni miesiąc</a></li>
+							<li><a href="#">Bieżący rok</a></li>
+							<li><a href="#">Niestandardowy</a></li>
+						</ul>				
+				</ol>
+
+				</div>
+		</div>
+			<div style="clear:both;"></div>
+		<div class="title"><a href="menu.html" class="link">Prowadź w sposób kontrolowany swoje finanse osobiste!</a></div>
+		<div class="content">
+			<div class="balanceDescription">
+				<p>Poniżej w tabeli nr 1 przedstawiono sumę przychodów z wybranego okresu czasu w wyszczególnionych kategoriach.
+				Tabela nr 2 prezentuje sumę wydatków w wybranym okresie czasu w poszczególnych kategoriach.
+				Tabela nr 3 to bilans ogólny przedstawiający sumę różnicy przychodów i  wydatków.</p> 
+			</div>
+			<div class="table1">
+				<table border="2">
+					<tr>
+						<td>KATEGORIE PRZYCHODÓW</td>
+						<td>SUMA PRZYCHODÓW</td>
+					</tr>
+					<tr>
+						<td>Wynagrondzenie</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Odsetki bankowe</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Sprzedaz na allegro</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Inne</td>
+						<td></td>
+					</tr>
+				</table>
+			</div>
+			<div class="table2">
+				<table border="2">
+					<tr>
+						<td>KATEGORIE WYDATKÓW</td>
+						<td>SUMA WYDATKÓW</td>
+					</tr>
+					<tr>
+						<td>Jedzenie</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Mieszkanie</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Kursy</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Kredyt</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Transport</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Telekomunikacja</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Opieka zdrowotna</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Ubranie</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Higiena</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Rozrywka</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Dzieci</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Wycieczka</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Książki</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Spłta długów</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Oszczędności</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Darowizna</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Na złotą jesień, czyli emeryturę</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Inne wydatki</td>
+						<td></td>
+					</tr>				
+				</table>
+			</div>
+			<div style="clear:both;"></div>
+			
+			<div class="table3">
+				<table border="2">
+					<tr>
+						<td>BILANS OGÓLNY</td>
+					</tr>
+					<tr>	
+						<td>przychody - wydatki = </td>
+					</tr>
+					<tr>	
+						<td>KOMETNARz</td>
+					</tr>
+				</table>
+			</div>
+			<div class="chartContainer"></div>
+		</div>
+			<div class="footer">Wszelkie prawa zastrzeżone &copy; 2018 Jakub Krajniewski</div>
+	</div>				
+			
+
+ </body>
+</html>		

@@ -1,0 +1,575 @@
+body
+{
+	/*Background pattern from subtlepatterns.com*/
+	background-image: url("img/ep_naturalwhite.png");
+	font-size: 28px;
+	font-family: 'Lato', sans-serif;
+}
+.container
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 1000px;
+}
+input[type=text],
+input[type=password],
+input[type=mail]
+{
+	width: 350px;
+	background-color: #efefef;
+	color: #666;
+	border: 2px solid #ddd;
+	border-radius: 5px;
+	font-size: 20px;
+	padding: 10px;
+	box-sizing: border-box;
+	outline: none;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+input[type=submit]
+{
+	width: 350px;
+	background-color: #36b03c;
+	font-size: 20px;
+	color: #fff;
+	padding: 15px 10px;
+	margin-top: 10px;
+	border: none;
+	cursor: pointer;
+	letter-spacing: 2px;
+	border-radius: 5px;
+	outline: none;
+	margin-top: 20px;
+	margin-left: 10px;
+}
+input[type=submit]:hover
+{
+	background-color: #37b93d;
+}
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=mail]:focus
+{
+		-webkit-box-shadow: 0px 0px 10px 5px rgba(204,204,204,0.9);
+		-moz-box-shadow: 0px 0px 10px 5px rgba(204,204,204,0.9);
+		box-shadow: 0px 0px 10px 5px rgba(204,204,204,0.9);
+		border: 2px solid #a5cda5;
+		background-color: #e9f3e9;
+		color: #428C42;
+}
+
+input[type=submit]:focus
+{
+		-webkit-box-shadow: 0px 0px 15px 2px rgba(204,204,204,0.9);
+		-moz-box-shadow: 0px 0px 15px 2px rgba(204,204,204,0.9);
+		box-shadow: 0px 0px 15px 2px rgba(204,204,204,0.9);	
+}
+
+input::-webkit-input-placeholder
+{
+    color: #999;
+}
+input:focus::-webkit-input-placeholder
+{
+    color: #428C42;
+}
+/* Firefox < 19 */
+input:-moz-placeholder
+{
+    color: #999;
+}
+input:focus:-moz-placeholder
+{
+    color: #428C42;
+}
+/* Firefox > 19 */
+input::-moz-placeholder
+{
+    color: #999;
+}
+input:focus::-moz-placeholder
+{
+    color: #428C42;
+}
+/* Internet Explorer 10 */
+input:-ms-input-placeholder
+{
+    color: #999;
+}
+input:focus:-ms-input-placeholder
+{
+    color: #428C42;
+}
+.title
+{
+	width:100%;
+	font-size: 28px;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.bar
+{
+	min-height: 50px;
+	background-color: #66ee66;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 20px;
+	padding-top: 15px;
+}
+.signUp
+{
+	float: left;
+	width: 480px;
+	margin-left: 20px;	
+	min-height: 390px;
+}
+.logIn
+{
+	margin: 5px;
+}
+input[type=textLogIn],
+input[type=passwordLogIn]
+{
+	width: 150px;
+	height: 18px;
+	background-color: #fefefe;
+	color: #666;
+	border: none;
+	border-radius: 2px;
+	font-size: 14px;
+	padding: 1px;
+	box-sizing: border-box;
+	outline: none;
+}
+input[type=submitLogIn]
+{
+	width: 100px;
+	height: 18px;
+	background-color: #36b03c;
+	font-size: 14px;
+	color: #fff;
+	padding: 2px 1px;
+	border: none;
+	cursor: pointer;
+	letter-spacing: 1px;
+	border-radius: 2px;
+	outline: none;
+	text-align: center;
+}
+input[type=submitLogIn]:hover
+{
+	background-color: #47c12d;
+}
+.description
+{
+	float: left;
+	width: 480px;
+	margin-left: 10px;
+	margin-right: 10px;
+	font-size: 18px;
+	text-align: justify;
+	line-height: 20px;
+	margin-top: 60px;
+	min-height: 390px;
+}
+
+.footer
+{
+	clear: both;
+	width: 960px;
+	background-color: #66ee66;
+	text-align: center;
+	font-size: 15px;
+	padding: 20px;
+	min-height: 20px;
+	margin-bottom: 15px;
+}
+h2
+{
+	font-weight: 400;
+	text-align: center;
+}
+h3
+{
+	padding:10px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+a.link
+{
+	text-decoration: none;
+	color: #111;
+}
+.menu
+{
+	width: 700px;
+	height: 450px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.income
+{
+	width: 345px;
+	height: 180px;
+	float: left;
+	text-align: center;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	overflow: hidden;
+}
+.overlay
+{
+	position: relative;
+	width: 345px;
+	height: 180px;
+}
+.overlay .linkPhoto
+{
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 55px;
+	left: 0;
+	top: 0;
+	font-size: 25px;
+	margin: 0;
+	color: #111;
+	opacity: 0;
+	background-color: #66ee66;
+	transition: opacity 0.5s ease-in-out;
+}
+.overlay .linkPhoto p
+{
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.overlay:hover .linkPhoto
+{
+	opacity: 0.7;
+}
+.income img
+{
+	transition: all 0.5s ease-in-out;
+}
+
+.income:hover img
+{
+	-webkit-transform: scale(1.10);
+	-ms-transform: scale(1.10);
+	transform: scale(1.10);
+}
+.expense
+{
+	width: 345px;
+	height: 180px;
+	float: left;	
+	text-align: center;
+	margin-left: 5px;
+	margin-bottom: 5px;
+	overflow: hidden;
+}
+.expense img
+{
+	transition: all 0.5s ease-in-out;
+}
+
+.expense:hover img
+{
+	-webkit-transform: scale(1.10);
+	-ms-transform: scale(1.10);
+	transform: scale(1.10);
+}
+.balance
+{
+	float: left;
+	width: 345px;
+	height: 180px;
+	text-align: center;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	overflow: hidden;
+}
+.balance img
+{
+	transition: all 0.5s ease-in-out;
+}
+
+.balance:hover img
+{
+	-webkit-transform: scale(1.10);
+	-ms-transform: scale(1.10);
+	transform: scale(1.10);
+}
+.settings
+{
+	float: left;
+	width: 345px;
+	height: 180px;
+	text-align: center;
+	margin-left: 5px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	overflow: hidden;
+}
+.settings img
+{
+	transition: all 0.5s ease-in-out;
+}
+
+.settings:hover img
+{
+	-webkit-transform: scale(1.10);
+	-ms-transform: scale(1.10);
+	transform: scale(1.10);
+}
+.logout
+{
+	width: 680px;
+	height: 40px;
+	text-align: center;
+	padding: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	background-color: #36b03c;
+	
+}
+.logout:hover
+{
+	background-color: #37c93d;
+	cursor: pointer;
+}
+.logout a
+{
+	color: #fff;
+}
+img
+{
+	width: 345px;
+	height: 180px;
+}
+a 
+{
+	text-decoration: none;
+	color: #fff;
+}
+
+#timer
+{
+	text-align: right;
+	float: left;
+	color: #fff;
+}
+.timericon
+{
+	text-align: right;
+	float: left;
+	color: #fff;
+}
+
+select
+{
+	width: 350px;
+	height: 40px;
+}
+.name
+{
+	float: left;
+	width: 150px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	height: 60px;
+}
+
+.expenseField
+{
+	float: left;
+	margin-bottom: 20px;
+	margin-top: 5px;
+	height: 35px;	
+	width: 400px;
+}
+.buttons
+{
+	width: 100%;
+	height: 60px;
+	text-align: center;
+}
+input[type=button]
+{
+	width: 200px;
+	height: 50px;
+	color: #fff;
+	font-size: 20px;
+	cursor: pointer;
+	margin: 5px;
+	box-sizing: border-box;
+	background-color: #36b03c;
+	border-radius: 5px;
+	outline: none;
+}
+input[type=button]:hover
+{
+	background-color: #37c93d;
+	outline: none;
+}
+
+select
+{
+	background-color: #efefef;
+	margin-left: 10px;
+	margin-top: 10px;	
+	width: 350px;
+	color: #666;
+	border: 2px solid #ddd;
+	border-radius: 5px;
+	font-size: 20px;
+	padding: 5px;
+	box-sizing: border-box;
+	outline: none;
+}
+select:focus
+{
+		-webkit-box-shadow: 0px 0px 10px 5px rgba(204,204,204,0.9);
+		-moz-box-shadow: 0px 0px 10px 5px rgba(204,204,204,0.9);
+		box-shadow: 0px 0px 10px 5px rgba(204,204,204,0.9);
+		border: 2px solid #a5cda5;
+		background-color: #e9f3e9;
+		color: #428C42;
+}
+h4
+{
+	text-align: center;	
+}
+.field
+{
+	padding: 10px;
+}
+
+.table1
+{
+	font-size: 18px;
+	width: 450px;
+	float: left;
+	margin: 10px;
+	padding: 5px;
+	text-align: center;
+	height: 300px;
+}
+
+.table2
+{
+	font-size: 18px;
+	width: 450px;
+	float: left;
+	margin: 10px;
+	padding: 5px;
+	text-align: center;
+}
+.table3
+{
+	font-size: 18px;
+	width: 500px;
+	margin: 10px;
+	padding: 5px;
+	text-align: center;
+}
+.table3  table
+{
+	width: 300px;
+	height: 150px;
+}
+.content
+{
+	width: 990px;
+	margin-left: auto;
+	margin-right: auto;
+	margin: 5px;
+}
+
+ol
+{
+	list-style-type: none;
+	padding: 0 10px;
+	margin: 0;
+	font-size: 18px;
+	height: 35px;
+	line-heipxght: 200%;
+	position: absolute;
+	right: 200px;
+}
+ol a
+{
+	display: block;
+	text-decoration: none;
+	color: #fff;
+}
+ol > ul
+{
+	list-style-type: none;
+	padding: 5px;	
+	background-color: #6aea6f;
+	display: none;
+}
+ol > ul > li
+{
+	height: 35px;
+	padding-top: 5px;
+}
+ol > li
+{
+	width: 150px;
+	height: 40px;
+	border-right: 1px dotted #006633;
+	text-align: center;
+	
+}
+ol:hover > ul
+{
+	display: block;
+}
+ol > li:first-child
+{
+	border-left: 1px dotted #006633;
+}
+
+ol > li:hover
+{
+	background-color: #66ff66;
+	cursor: pointer;
+}
+
+ol > li:hover > a
+{
+	color: #006633;
+}
+
+ol > ul > li 
+{	
+	position: relative;
+	z-index: 100;
+	border-top: 1px dotted #006633;
+}
+ol > ul > li:hover
+{
+	background-color: #66ff66;
+}
+
+ol > ul > li:hover > a
+{
+	color: #006633;
+}
+
+.balanceDescription p
+{
+	font-size: 18px;
+	text-align: justify;
+}
+
+.chartContainer
+{
+	 width: 100%;
+	 height: 200px;
+}
